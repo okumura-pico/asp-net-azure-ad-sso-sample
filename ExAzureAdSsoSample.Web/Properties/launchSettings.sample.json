@@ -1,0 +1,17 @@
+﻿{
+  "profiles": {
+    "ExAzureAdSsoSample.Web": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_AzureAd__Instance": "https://login.microsoftonline.com/",
+        "ASPNETCORE_AzureAd__TenantId": "11111111-2222-3333-4444-555555555555",
+        "ASPNETCORE_AzureAd__ClientId": "22222222-2222-3333-4444-555555555555",
+        "ASPNETCORE_AzureAd__CallbackPath": "/signin-oidc"
+      }
+    }
+  }
+}
