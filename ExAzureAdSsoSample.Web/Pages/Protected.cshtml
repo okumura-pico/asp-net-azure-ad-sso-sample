@@ -3,3 +3,9 @@
 @{
     ViewData["title"] = "Protected page";
 }
+
+<h1>Welcom @User.Identity.Name</h1>
+
+<p>
+    認証済みでないとアクセスできないページです。
+</p>

@@ -11,5 +11,14 @@
 </p>
 
 <p>
-    <a href="Protected/">Protected page</a>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <span>あなたは認証済みです。アクセスできます。</span>
+    }
+    else
+    {
+        <span>あなたは未認証です。ログイン画面へ遷移します。</span>
+    }
+    <br>
+    <a href="Protected/">認証済みでないとアクセスできないページ</a>
 </p>
